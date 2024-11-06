@@ -87,10 +87,10 @@
             </div>
         </template>
     </div>
-    
+
     <footer class="footer" v-if="!showDetail">
       <button @click="showModal = true" class="report-button">关于本报告</button>
-  
+
       <div v-if="showModal" class="modal-overlay" @click.self="closeModal">
         <div class="modal-content">
           <h2>温馨提示</h2>
@@ -179,12 +179,12 @@ function closeModal() {
 
 /* 内容区域样式，设置固定高度并允许滚动 */
 /* .content {
-  height: 200px; 
+  height: 200px;
   overflow-y: auto;
   padding: 1rem;
 }
 .detail-content {
-  height:600px; 
+  height:600px;
   overflow-y: auto;
   padding: 1rem;
 } */
@@ -225,12 +225,12 @@ function closeModal() {
     padding: 1rem;
     background-color: #ffffff;
 }
-  
+
 .vehicle-info {
     text-align: left;
     font-size: 1.2rem;
 }
-  
+
 .status-card {
     display: flex;
     align-items: center;
@@ -239,12 +239,12 @@ function closeModal() {
     background-color: #d8e7ff;
     border-radius: 10px;
 }
-  
+
 .status-image {
     width: 60px;
     margin-right: 1rem;
 }
-  
+
 .status-details p {
     margin: 0;
     font-size: 0.9rem;
@@ -274,10 +274,10 @@ function closeModal() {
 /* 关于本报告弹窗样式 */
 .footer {
     text-align: center;
-  
+
     background-color: #f0f2f5;
   }
-  
+
   .report-button {
     background-color: transparent;
     border: none;
@@ -285,7 +285,7 @@ function closeModal() {
     cursor: pointer;
     font-size: 1rem;
   }
-  
+
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -298,7 +298,7 @@ function closeModal() {
     justify-content: center;
     z-index: 1000;
   }
-  
+
   .modal-content {
     background-color: #ffffff;
     padding: 1.5rem;
@@ -308,19 +308,19 @@ function closeModal() {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+
   .modal-content h2 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }
-  
+
   .modal-content p {
     font-size: 0.9rem;
     color: #333;
     line-height: 1.5;
     margin-bottom: 1.5rem;
   }
-  
+
   .close-button {
     background-color: #007bff;
     color: #ffffff;
@@ -331,4 +331,3 @@ function closeModal() {
     font-size: 1rem;
   }
 </style>
-  

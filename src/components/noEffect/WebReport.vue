@@ -1,4 +1,4 @@
-#没用了
+<!-- 没用了 -->
 
 <template>
     <div class="report-card">

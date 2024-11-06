@@ -1,17 +1,13 @@
 <script setup>
 import Header from './components/WebHeader.vue';
-//import Report from './components/WebReport.vue';
-//import Footer from './components/WebFooter.vue';
-//import Tabs from './components/WebTabs.vue';
-
 import { RouterView } from 'vue-router'
-// import HelloWorld from './components/HelloWorld.vue'
 
 </script>
 
 <template>
   <div class="app-container">
     <Header />
+<!--    <div style="margin-top: 50px"></div>-->
     <RouterView />
 
   </div>
@@ -19,16 +15,24 @@ import { RouterView } from 'vue-router'
 
 <style scoped>
 .app-container {
+  position: absolute; /* 设置绝对定位 */
+  top: 50%; /* 顶部距离视口的50% */
+  left: 50%; /* 左边距离视口的50% */
+  transform: translate(-50%, -50%); /* 向左和向上移动自身宽度和高度的50% */
   margin: 0 auto;
   width: 420px; /* 固定宽度 */
   height: 640px; /* 固定高度 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  background-color: #f8f9fa;
+
 }
 @media (max-width: 768px) {
-  .container {
+  .app-container {
+    position: relative; /* 在小屏幕上设置为相对定位 */
+    top: 0;
+    left: 0;
+    transform: none;
     max-width: 100%; /* 在小屏幕上设置为全屏 */
     padding: 0.5rem;
     box-shadow: none; /* 在小屏幕上移除阴影 */
